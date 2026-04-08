@@ -24,7 +24,8 @@ The segmentation process is based on YOLOv8 model
 # Evaluation and Ablation study
 
 # REPOSITORY STRUCTURE
-
+- README.md
+- PRESENTATION: it contains the presentation of the whole project
 The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in which the model training was developed. Each notebook imports the necessary datasets from a google drive in which they are stored.
 - GAN
     - pix2pix-training: In this notebook, a pix2pix model is trained to generate realistic 256x256 orthopanoramic images from a segmentation mask.
