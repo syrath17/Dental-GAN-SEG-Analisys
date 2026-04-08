@@ -24,9 +24,10 @@ The segmentation process is based on YOLOv8 model
 # Evaluation and Ablation study
 
 # REPOSITORY STRUCTURE
+The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in which the model training was developed. Each notebook imports the necessary datasets from a google drive in which they are stored. The **EVAL_ABL** directory contains the kaggle notebooks in which the evaluation and ablation studies were conducted.
+
 - README.md
 - PRESENTATION: it contains the presentation of the whole project
-The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in which the model training was developed. Each notebook imports the necessary datasets from a google drive in which they are stored.
 - GAN
     - pix2pix-training: In this notebook, a pix2pix model is trained to generate realistic 256x256 orthopanoramic images from a segmentation mask.
     - realesrgan-training: In this notebook, the real-ESRGAN Super Resolution model is trained to upscale orthopanoramic images from 256x256 to 512x512.
@@ -34,9 +35,6 @@ The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in whi
 - SEGMENTATION
     - yolo_aug: In this notebook, a YOLOV8-seg model is trained to correctly identify and segment teeth structures on real orthopanoramic images.
     - SAM: In this notebook, a Segment Anything Model (SAM) was deployed to refine the existing teeth masks and standardize the dataset.
-
-
-The **EVAL_ABL** directory contains kaggle notebooks in which evaluation and ablation studies were conducted.
 - EVAL_ABL
     - notebook 1 descrizione
     - notebook 2 descrizione
