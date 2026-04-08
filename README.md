@@ -1,5 +1,5 @@
 # Synthetic Dental X-Ray Generation and Segmentation Analysis
-This project aims at developing a GAN model to generate synthetic orthopanoramic dental X-ray images, and training and evaluating a YOLO-based segmentation model on real and synthetic datasets. The main focus is to assess how well a segmentation model trained on real data generalizes to synthetic images and to identify its potential limitations. Several GAN architectures have been tested (StyleGAN-ADA2, Pix2Pix). The synthetic data performance has been evaluated with a YOLOv8-seg model. 
+This project aims at developing a GAN model to generate synthetic orthopanoramic dental X-ray images, and training and evaluating a YOLO-based segmentation model on real and synthetic datasets. The main focus is to assess how well a segmentation model trained on real data generalizes to synthetic images and to identify its potential limitations. Several GAN architectures have been tested (StyleGAN2-ADA, Pix2Pix). The synthetic data performance has been evaluated with a YOLOv8-seg model. 
 
 The whole project and all of its models have been trained on Kaggle utilising its limited free resources. Two T4 GPUs with 16gb of VRAM were utilized to train all the models present in the Repository.
 
@@ -28,11 +28,12 @@ The segmentation process is based on YOLOv8 model
 
 The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in which the model training was developed. Each notebook imports the necessary datasets from a google drive in which they are stored.
 - GAN
-    - pix2pix: in this notebook a pix2pix model is trained to generate realistic 256x256 orthopanoramic images from a segmentation mask.
-    - realesrgan-training: in this notebook the real-ESRGAN Super Resolution model is trained to upscale orthopanoramic images from 256x256 to 512x512.
-    - styleGAN2-ADA: in this notebook a styleGAN2-ADA model is trained to generate realistic 256x256 orthopanoramic synthetic images from scratch.
+    - pix2pix-training: In this notebook, a pix2pix model is trained to generate realistic 256x256 orthopanoramic images from a segmentation mask.
+    - realesrgan-training: In this notebook, the real-ESRGAN Super Resolution model is trained to upscale orthopanoramic images from 256x256 to 512x512.
+    - styleGAN2-ADA-training: In this notebook, a styleGAN2-ADA model is trained to generate realistic 256x256 orthopanoramic synthetic images from scratch.
 - SEGMENTATION
-    - yolo_aug: in this notebook a YOLOV8-seg model is trained to correctly identify and segmentate teeth structures on real orthopanoramic images.
+    - yolo_aug: In this notebook, a YOLOV8-seg model is trained to correctly identify and segment teeth structures on real orthopanoramic images.
+    - SAM: In this notebook, a Segment Anything Model (SAM) was deployed to refine the existing teeth masks and standardize the dataset.
 
 
 The **EVAL_ABL** directory contains kaggle notebooks in which evaluation and ablation studies were conducted.
