@@ -36,6 +36,7 @@ The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in whi
 - SEGMENTATION
     - _yolov8-training_: In this notebook, a YOLOV8-seg model is trained to correctly identify and segment teeth structures on real orthopanoramic images.
     - _sam-notebook_: In this notebook, a Segment Anything Model (SAM) was deployed to refine the existing teeth masks and standardize the dataset.
+    - _yolov8-augmented-data-training_: In this notebook, YOLOv8-seg model is trained with the addition of pix2pix synthetic images in the dataset.
 - EVAL_ABL
     - _gan-segmentation-eval_: In this notebook, the performance of StyleGAN2-ADA and Pix2Pix is evaluated using YOLOv8-seg trained model and compared to the real data segmentation results. Furthermore FID score was computed along with other metrics.
     - notebook 2 descrizione
