@@ -43,5 +43,5 @@ The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in whi
 
 --------------
 # RUN INSTRUCTIONS
-Every notebook is pre-configured for Kaggle with GPU T4x2 accelerator. Make sure to toggle the Internet setting before running. \
+Every notebook is pre-configured for Kaggle with GPU T4x2 accelerator. Make sure to toggle on the Internet setting before running. \
 The dataset will be automatically downloaded from Google Drive during the initial setup of each notebook.
