@@ -39,5 +39,9 @@ The **SEGMENTATION** and **GAN** directories contain the kaggle notebooks in whi
     - _yolov8-augmented-data-training_: In this notebook, YOLOv8-seg model is trained with the addition of pix2pix synthetic images in the dataset.
 - EVAL_ABL
     - _gan-segmentation-eval_: In this notebook, the performance of StyleGAN2-ADA and Pix2Pix is evaluated using YOLOv8-seg trained model and compared to the real data segmentation results. Furthermore FID score was computed along with other metrics.
-    - notebook 2 descrizione
-  
+    - _yolov8-performance-eval_: In this notebook, the performance of YOLOv8 model trained on several datasets with different percentages of synthetic images is evaluated.
+
+--------------
+# RUN INSTRUCTIONS
+Every notebook is pre-configured for Kaggle with GPU T4x2 accelerator. Make sure to toggle the Internet setting before running. \
+The dataset will be automatically downloaded from Google Drive during the initial setup of each notebook.
